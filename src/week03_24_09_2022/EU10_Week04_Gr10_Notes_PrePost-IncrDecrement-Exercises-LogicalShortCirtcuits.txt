@@ -1,0 +1,142 @@
+EU10 Week 04 - 29.09.2022 ============================================================================ 
+
+***Attendees: 
+
+
+***How was your last week?
+
+    (J) Day 7 - Operators: Unary, Shorthand, Relational
+    (J) Day 8 - Logical Operators, Single If Statement
+    (J) Day 9 - If & Else and Multi-Branch If Statements
+    
+    (S) Software Testing Intro
+    (S) Static testing vs Dynamic testing
+
+
+     Some topics take time to digest, so NO WORRIES
+     When I was a student, I had NO IDEA about Soft-Skill classes and topics
+     After now you will use these topics until the end (especially in our Project Study in Part-2)
+     If you dont have enough time to watch all recs, "may watch explanation + 1 task solution only + 1 more task"
+     Please watch short videos as well
+
+
+***Assignment Operators : x = y  (as you know, we always assign the "right side" => "left side")        
+
+          x += y means x = x + y;   
+          x /= y means x = x / y; // !!! Use a lot if necessary > Clean code
+
+
+*** PRE-POST INCREMENT/DECREMENT
+
+	post (increment/decrement)  ( x++, x-- ) => first use the value, then increase/decrease it on the memory 
+
+	pre (increment/decrement)   ( ++x, --x ) => first increase/decrease the value on the memory, then use it  
+
+
+EXERCISES;
+===============================================
+int x = 4;
+
+int y = x * 4 - x++;
+        
+
+System.out.println(y);//
+
+System.out.println(x);//
+===============================================
+
+int i = 11, j = 4;
+
+int res = i++ + --j;
+           
+
+System.out.println("res = " + res);//
+==============================================
+
+     		int a =10;
+     			 
+     		int res = --a + a++ + a-- + a++;
+
+
+
+
+System.out.println("a = " + a);//
+System.out.println("res = " + res);//
+
+
+============================================
+
+int a = 100;
+
+a -= 20 * 2;
+
+System.out.println("a = " + a);//
+
+===========================================
+
+*** LOGİCAL OPERATORS:
+
+     - && and || operators provide "short-circuit"
+
+	( 1.condition ) || ( 2.condition )  => If 1.condition == true   ==> not execute/evaluate 2.condition
+
+	( 1.condition ) && ( 2.condition )  => If 1.condition == false  ==> not execute/evaluate 2.condition
+
+
+
+EXERCISES;
+==========================================
+     
+     int x = 1;
+
+          System.out.println( (x > 4) && (++x == 4) ) ;  //
+          System.out.println( x );  // 
+
+
+          System.out.println( (x > 4) & (++x == 4) );   //
+          System.out.println( x ); //  
+
+============================================
+
+     int x = 1;
+
+          System.out.println( (x > 0) || (++x == 4) );   //
+          System.out.println( x ); // 
+
+
+          System.out.println( (x > 0) | (++x == 4) );    //
+          System.out.println( x );  // 
+
+==============================================
+
+*** If-Else Statements
+
+          
+          If Statements    => Used for conditional statements. 
+                              If the condition is true, the block gets executed.
+          single if        => For one condition
+          if & else        => For 2 conditions only.
+          multi-branch if  => For 3 or more conditions.
+
+
+     repl -=> Three nums + Greater number + Odd or Even + Positive, Negative or Zero
+          
+          !!!Please ask help from group channel if you get stuck in some point while dealing with replit qs.
+         
+          
+
+
+*** Testing types: 50-60 different tests 
+
+     https://www.softwaretestinghelp.com/types-of-software-testing/ (already shared in your group channel)
+
+      -NO CONFUSE yourself, besides you should know NOT ONLY but at least for now:
+
+      Static - Dynamic   -> docs vs coding
+      Functional - Nonfunctional
+      Functional     -> Functions
+      Non-functional -> Non-functional parts of the app 
+
+     * Black Box - White Box - Grey Box -> very important to know
+     
+     !!!Functional -> "Smoke" - "Regression"  ***** Number 1 priority as a QA Engineer *****!!!!

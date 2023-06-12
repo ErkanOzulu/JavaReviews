@@ -1,0 +1,166 @@
+Topics:
+
+  - Method Practice
+
+  - Method Overloading
+
+  - Wrapper Class
+
+=========================================
+
+** Method Overloading
+
+if a class has multiple methods with same it is called method overloaading
+
+
+        Adv :
+                - Reusabilty
+                - Flexible
+                - Readable
+                - Easy to memorize
+                        Bad Practice : sum1(int a,int b)     sum2(double a, double b)
+                        Good Practice: sum(int a,int b)      sum(double a, double b)
+
+        Rules :
+
+                - Number of Prameters -- OVERLOADING
+
+                    add(int a,int b );
+                    add(int a);
+
+                - Dataypes of Paramters -- OVERLOADING
+
+                    add(int a,float b);
+                    add(int a,int a);
+
+                - Sequrnce of Paramters -- OVERLOADING
+                    add(int a,float b);
+                    add(float a,int b);
+
+                - Return Type           -- Invalid Case
+                    int   add(int a,float b);
+                    float add(int b, float a);
+
+
+==============================================================
+
+** Wrapper Class : Class of primitive data types
+
+
+			Intro
+
+			- Why do we need ?
+			       - Array can spport primitves objects.Collection allows only Object
+			       - Useful methods
+			       - to convert primmitive to object
+
+			- parseInt(),parseDouble() etc vs valueOf()
+			- Auto-Boxing vs Unboxing
+			- WrapperClassMethods
+
+
+
+        // - Auto-Boxing vs Unboxing
+
+        // Auto boxing primitve to object
+        int b=30;
+        Integer a=b;
+
+        // Un boxing Object to primitve
+        Integer num1=Integer.valueOf(300);
+        int num2=num1;
+
+
+        //  parseInt(),parseDouble() etc vs valueOf()
+
+        Scanner sc =new Scanner(System.in);
+        String str=new String("Test");
+
+       // Integer num=new Integer(300);
+
+        Integer num3=Integer.valueOf(300);   // return Onject
+        int i = Integer.parseInt("123");  // return primitives
+
+
+
+Tasks:
+
+
+
+        Task 1 : Find the word
+
+					String str = "(((W&e**_lco73me %T%o Co!@$,,<r>e <J>>>$@av^453a";
+
+					Write a method that returns : Welcome To Core Java
+
+
+
+        Task 2 : Four or less
+
+
+					Given an ArrayList of Strings, go through and read only Strings that are 4 characters or less.
+
+					Take those Strings and put them into a different ArrayList
+
+					Ex:
+
+					Input:
+					“apples”, “tree”, “loop, “cat”, “animal”, “shortcut”
+
+					Output:
+					[ tree, loop, cat ]
+
+		Task 3 : String numbers to sum
+
+					Given an Array of numbers in String format, add each digit of each element and store into a different Array.
+
+					Ex:
+
+					Input:
+					“123”, “34”, “513”
+
+					Output:
+					[ 6, 7, 9 ]
+
+
+		Task 4 : Hide Passwords
+
+			        Given an array of passwords (String). Hide each password as a star (*) and show the hidden password
+
+					Ex:
+
+					Input:
+					{"one", "hi", "hold}
+
+					Output:
+					[ ***, **, **** ]
+
+
+		Task 5 : Target Words
+
+					Given an Array of Strings and a target word (String) print how many times the target word is in the Array
+					Ex:
+					Input:
+						”java”, ”html”, “css”, “java”, “javascript”, “selenium”
+						Target: java
+
+						Output: 2
+
+
+
+        Task 6 :  Fibonacci
+
+				Create a method that will give you the Fibonacci numbers up to the x value. Where x is the given parameter.
+
+				Fibonacci is a sequence of number starting from 0, 1 where the following numbers are the sum of the previous 2 numbers
+
+				Note: Fibonacci numbers are read as index values, so the 0th Fibonacci is 0, 1st value is 1, 2nd value is 1, etc
+
+				    Ex:
+				        Input:
+				            8
+				        Output:
+				            0, 1, 1, 2, 3, 5, 8, 13, 21
+				         */
+
+

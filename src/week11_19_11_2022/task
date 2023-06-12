@@ -1,0 +1,85 @@
+Task 1 :
+
+Create a method that which is get array list as a parameter then return the numbers which are divisible by 3.
+
+input:
+
+  numbers : 2,3,4,5,6,8,9
+
+output:
+
+3,6,9
+
+
+Task 2 :
+
+Create a method that get two arraylists as a parameters the return the array which has contains all elements in it.
+
+input:
+
+first arraylist :1,2,3
+
+second arraylist :4,5,6
+
+output:
+
+1,2,3,4,5,6
+
+
+Task 3 :
+
+Create a method that get two arrays as a parameters then return the arraylist which has contains unique elements in it.
+
+first array :1,2,3,4,5
+
+second array :4,5,6
+
+output:
+
+1,2,3,4,5,6
+
+Task 4 :
+
+1. create a class named Student that has the followings features:
+            Attributes:
+                name, gender, dateOfBirth, age, studentID, grade
+
+            Methods:
+                sets all the attributes of the student object
+                toString(): returns the full info of student Object
+
+2. create a class which is School with main method
+
+3. create a list of student in School class
+
+4. create a method in School class which is getting list of students as parameter the return the list of students if the name start with "A"
+
+
+
+Task 5 :
+
+
+        Create a class for BMW
+            - Create these variables in the class:
+                 - brand,model,color (String),      // BMW,x5,White
+                - price,mileage (double)           // 20000,10000
+                - year (int)                       // 2015
+                - DOfB(LocalDate)                   // 2015,5,20
+
+
+        - Create these methods :
+            - setInfo() (Or we can use constructor)
+                - parameters: all atributes
+                - returns: void
+                - action: assigns necessary attributes for instance variables.
+
+        - getBrandName()
+             no parameters, returns the brand variable
+
+        - toString()   generate the toString method as shown in class.
+
+        - Create a class MainClass for BMW
+
+        - Create BMW  objects, call the getBrandName and get methods of the objects
+            - Create an Arraylist to recall ALL BMW that were build before 2017
+            - Create an Arraylist to recall ALL BMW i8 that were build before 2016

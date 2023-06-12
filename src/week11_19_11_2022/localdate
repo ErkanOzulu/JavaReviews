@@ -1,0 +1,30 @@
+/*LocalDate is an immutable date-time object that represents a date, often viewed as year-month-day. Other date fields, such as day-of-year, day-of-week and week-of-year, can also be accessed. For example, the value "2nd October 2007" can be stored in a LocalDate.
+This class does not store or represent a time or time-zone. Instead, it is a description of the date, as used for birthdays. It cannot represent an instant on the time-line without additional information such as an offset or time-zone.*/
+
+import java.time.LocalDate; // We should import the class before.
+
+// These are some important methods of this class.
+boolean isLeapYear()    //It is used to check if the year is a leap year, according to the ISO proleptic calendar system rules.
+
+static LocalDate now()    //It is used to obtain the current date from the system clock in the default time-zone.
+
+LocalDate plusDays(long daysToAdd)    //It is used to return a copy of this LocalDate with the specified number of days added.
+
+LocalDate plusMonths(long monthsToAdd)    //It is used to return a copy of this LocalDate with the specified number of months added.
+
+LocalDate minusDays(long daysToSubtract)    //It is used to return a copy of this LocalDate with the specified number of days subtracted.
+
+LocalDate minusMonths(long monthsToSubtract)    //It is used to return a copy of this LocalDate with the specified number of months subtracted.
+
+static LocalDate parse(CharSequence text)    //It obtains an instance of LocalDate from a text string such as 2007-12-03
+
+//With the help of the method below, we can define the date manually.
+LocalDate date1 = LocalDate.of(2022, 11, 18);
+//Some examples:
+    LocalDate date = LocalDate.now();
+    LocalDate yesterday = date.minusDays(1);
+    LocalDate tomorrow = yesterday.plusDays(2);
+    LocalDate date2 = LocalDate.of(2022, 11, 18);
+    System.out.println(date2.isLeapYear());
+    String dInStr = "1994-11-18";
+    LocalDate d1 = LocalDate.parse(dInStr)

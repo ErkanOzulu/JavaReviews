@@ -1,0 +1,69 @@
+Review Questins:
+
+1- What do you know about branching statements?
+2- What is diffference between while and do while loop?
+
+Topics:
+
+
+  - Nested Loop
+  - System.exists(0);
+
+==============================
+
+- Nested Loop: loop inside a loop (inner & outer)
+
+		outer loop repeats the inner
+
+
+- we can implement more than one loop inside the other loop
+
+=================================
+- we have different types branching statements these are :
+
+break: exits the loop & switch
+continue: skips the current iteration of the loop
+System.exit(0): terminates the current program, terminates the JVM
+
+
+============================
+Tasks:
+
+ -- Task 1: Find the number taht given a hidden number between 1 and 100 randomly created.
+
+ Hint:   Random random=new Random();
+
+        int hiddenNumber = random.nextInt(100) + 1;
+
+
+-- Task 2:  Write a programt that replaces every occurrence of "cat" in the message with "dog", using indexOf and substring.
+
+  input:
+
+  String message = "I love cats! I have a cat named Coco. My cat's very smart!";
+
+  output:
+
+ "I love dogs! I have a dog named Coco. My dog's very smart!";
+
+
+
+--  Task 3: Count each name in sentence.
+
+    input :
+
+  String names = "Adam Adam Barry Aysun Aysun";
+
+    output:
+
+    Adam-2 Barry-1 Aysun-2
+
+--  Task 4: Reverse each word in a sentence.
+
+    input:
+
+    String str = "Adam come here";
+
+    output:
+
+    madA emoc ereh

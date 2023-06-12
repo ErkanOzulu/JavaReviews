@@ -1,0 +1,5 @@
+2. Create an encapsulated class called Credentials
+with attributes username and password,
+which are already initialized with some values in the
+same Credentials class.
+Create another class Login, to set and get values of Credentials class.

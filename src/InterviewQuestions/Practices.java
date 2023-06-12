@@ -12,36 +12,79 @@ public class Practices {
 
          You can do this program with the help of do while loop.
          */
-        Scanner scan=new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         System.out.print("Please enter a number");
-        if (scan.hasNextInt()){//checks if the number is an int
+        if (scan.hasNextInt()) {//checks if the number is an int
             int num = scan.nextInt();
+            int dumy = num;
+            int l = Integer.toString(dumy).length();
+            int sum = 0;
 
-            if (armstrongnumber(num)) {
-                System.out.println(num+" is a armstrong number.");
+            while (dumy > 0) {
+                int a = dumy % 10;
+                dumy /= 10;
+                sum += (int) Math.pow(a, l);
+            }
+
+            if (num == sum) {
+                System.out.println(num + " is a armstrong number.");
             } else {
                 System.out.println(num + " is not a armstrong number");
             }
-        }else {
+
+        } else {
             System.out.println("Invalid input");
         }
+        scan.nextLine();
+
+        System.out.println("---------- multiplication table ----------");
+
+        //the multiplication table
 
 
-    }
-
-    private static boolean armstrongnumber(int num) {
-
-        int dumy=num;
-        int l= Integer.toString(dumy).length();
-        int sum=0;
-        while (dumy>0){
-            int a=dumy%10;
-            dumy/=10;
-            sum+= (int) Math.pow(a,l);
+        for (int i = 1; i <=10 ; i++) {
+            for (int j = 1; j <=10 ; j++) {
+                System.out.println(i+" * "+j+" = "+(i*j));
+            }
         }
 
-       return  (sum==num)?true:false;
+        System.out.println("---------- user login  ----------");
+        //Try to write a user login with the help of a while loop.
+
+        String sys_username="Ahmet Mustafa";
+        String sys_password= "123ass";
+
+        int entryOfNum=3;
+
+        while (entryOfNum>0) {
+
+            System.out.print("Please enter your name : ");
+            String username = scan.nextLine();
+            System.out.print("Please enter your password : ");
+            String password=scan.nextLine();
+
+            if (username.equals(sys_username)&&password.equals(sys_password)){
+                System.out.println("Welcome "+username);
+            } else if (username.equals(sys_username)&&!password.equals(sys_password)) {
+                System.out.println("Your password is not correct, please try again");
+                entryOfNum-=1;
+                System.out.println("Your right of entries : "+entryOfNum);
+            } else if (!username.equals(sys_username)&&password.equals(sys_password)) {
+                System.out.println("Your username is not correct, please try again");
+                entryOfNum-=1;
+                System.out.println("Your right of entries : "+entryOfNum);
+            } else {
+                System.out.println("Your password and username is not correct, please try again");
+                entryOfNum-=1;
+                System.out.println("Your right of entries : "+entryOfNum);
+            }
+
+            if (entryOfNum==0){
+                System.out.println("Your right of entries is finished.We are waiting for you again");
+            }
+        }
+
 
     }
 }

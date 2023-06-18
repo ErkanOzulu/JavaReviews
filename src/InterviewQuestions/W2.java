@@ -1,5 +1,8 @@
 package InterviewQuestions;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class W2 {
 
     public static void main(String[] args) {
@@ -42,6 +45,8 @@ public class W2 {
 
 
         }
+
+
         System.out.println("s = " + s);
         System.out.println("num = " + num);
         System.out.println("divisibelBy15 = " + divisibelBy15);

@@ -37,8 +37,7 @@ public class TestEnum {
                 break;
 
             case Friday:
-
-
+                System.out.println("Today is "+day);
 
         }
 

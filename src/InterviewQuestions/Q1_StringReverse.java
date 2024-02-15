@@ -1,14 +1,26 @@
 package InterviewQuestions;
 
 import javax.sound.midi.Soundbank;
+import java.sql.Array;
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 public class Q1_StringReverse {
     public static void main(String[] args) {
-        String reverse = reverseStr("apple");
+
+        String str="apple";
+        String reverse = reverseStr(str);
         System.out.println(reverse);
+
+        System.out.println("----------second way--------------");
+
+
+        System.out.println(reverse2(str));
     }
+
+
 
     private static String reverseStr(String str) {
 
@@ -19,19 +31,17 @@ public class Q1_StringReverse {
         }
         return reverse;
 
-       /*
-       System.out.println("Secondway with StringBuilder");
-        StringBuilder reverse = new StringBuilder();
-
-
-        // iterate over input string from the back with charAt
-        for(int i = str.length() - 1; i >= 0; i--) {
-            // add chars to reversed variable
-            reverse.append(String.valueOf(str.charAt(i)));
-               // convert to string and return reversed version
-        return reverse.toString();
-    }*/
         }
+
+    private static String reverse2(String str) {
+
+        StringBuilder stringBuilder=new StringBuilder(str);
+
+        return stringBuilder.reverse().toString();
+
+
+
+    }
 
 
 }

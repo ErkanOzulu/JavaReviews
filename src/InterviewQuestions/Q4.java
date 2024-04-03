@@ -6,12 +6,12 @@ public class Q4 {
     public static void main(String[] args) {
 
         String input = "gffg";
-        int count = countDistinctSubstrins(input);
+        int count = countDistinctSubstring(input);
         System.out.println(count);
 
     }
 
-    private static int countDistinctSubstrins(String input) {
+    private static int countDistinctSubstring(String input) {
 
         input.substring(0,1);
         input.substring(0,2);

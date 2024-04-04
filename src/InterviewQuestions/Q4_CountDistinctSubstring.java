@@ -2,7 +2,7 @@ package InterviewQuestions;
 
 import java.util.*;
 
-public class Q4 {
+public class Q4_CountDistinctSubstring {
     public static void main(String[] args) {
 
         String input = "gffg";
@@ -62,8 +62,8 @@ public class Q4 {
         return isValid ;
     }
 
-    /*
-"Count of substrings having all distinct characters
+    /**
+Count of substrings having all distinct characters
 Given a string str consisting of lowercase alphabets, the task is to find the number of possible substrings (not necessarily distinct) that consists of distinct characters only.
 Examples:
 Input: Str = “gffg”
